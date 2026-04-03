@@ -248,17 +248,35 @@ Generate `media-kit.md` with all bios, photo table, and links. No page generatio
 
 ## Phase 5: Bundle
 
-Create the downloadable zip:
+### Naming Convention
+
+Use a personal identifier (e.g. GitHub handle) in both the **zip filename** and the **top-level folder inside the zip** so recipients can distinguish it from other media kits:
+
+- Zip file: `[handle]-media-kit.zip` (e.g. `augchan42-media-kit.zip`)
+- Extracts to: `[handle]-media-kit/` (e.g. `augchan42-media-kit/`)
+
+Never use a generic name like `media-kit.zip` — organizers juggle kits from many speakers.
+
+### Create the zip
 
 ```bash
-zip -r [name]-media-kit.zip \
-  media-kit.md \
-  img/[name]_headshot_square.png \
-  img/[name]_headshot_square_transparent.png \
-  img/[name]_headshot_wide.png \
-  img/[name]_headshot_wide_transparent.png \
-  img/[name]_portrait.jpeg \
-  img/[name]_portrait_transparent.png
+# Organize assets under the named folder, then zip it
+zip -r [handle]-media-kit.zip [handle]-media-kit/
+```
+
+The folder should contain:
+
+```
+[handle]-media-kit/
+├── media-kit.md
+├── headshots/
+│   ├── [name]_headshot_square.png
+│   ├── [name]_headshot_square_transparent.png
+│   ├── [name]_headshot_wide.png
+│   └── [name]_headshot_wide_transparent.png
+└── portraits/
+    ├── [name]_portrait.jpeg
+    └── [name]_portrait_transparent.png
 ```
 
 Report final zip size.
