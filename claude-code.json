@@ -1,0 +1,16 @@
+{
+  "name": "media-kit",
+  "version": "0.1.0",
+  "description": "Claude Code skill for building speaker media kits — bio writing, photo prep, and page generation",
+  "author": "Augustin Chan",
+  "license": "MIT",
+  "commands": [
+    "./commands/media-kit.md"
+  ],
+  "skills": [
+    {
+      "name": "media-kit",
+      "description": "Use when building a speaker media kit — walks through bio writing, photo prep (cropping, transparency, sizing), and page generation for event organizers"
+    }
+  ]
+}
