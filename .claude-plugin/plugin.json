@@ -1,0 +1,16 @@
+{
+  "name": "media-kit",
+  "description": "Claude Code skill for building speaker media kits — bio writing, photo prep, and page generation",
+  "version": "0.1.0",
+  "author": {
+    "name": "Augustin Chan",
+    "url": "https://github.com/augchan42"
+  },
+  "homepage": "https://github.com/augchan42/media-kit",
+  "repository": "https://github.com/augchan42/media-kit",
+  "license": "MIT",
+  "keywords": ["media-kit", "speaker", "headshot", "bio", "photo-prep"],
+  "skills": [
+    "./skills/media-kit"
+  ]
+}

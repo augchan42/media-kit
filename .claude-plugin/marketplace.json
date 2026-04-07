@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "augchan42-media-kit",
+  "owner": { "name": "Augustin Chan" },
+  "plugins": [
+    {
+      "name": "media-kit",
+      "description": "Claude Code skill for building speaker media kits — bio writing, photo prep, and page generation",
+      "source": {
+        "source": "github",
+        "repo": "augchan42/media-kit"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/augchan42/media-kit"
+    }
+  ]
+}
